@@ -23,11 +23,16 @@
         <a onclick="step3()" id="step3" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
           3. Create Account
         </a>
+      </div>
+      <div class="flex mx-auto flex-wrap mb-8">
         <a onclick="step4()" id="step4" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
           4. Shop
         </a>
         <a onclick="step5()" id="step5" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
-            5. Scan Receipt
+            5. Verify Purchase
+        </a>
+        <a onclick="step6()" id="step6" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+            6. Scan Receipt
         </a>
       </div>
       
@@ -82,4 +87,11 @@
         document.getElementById("guide_body").innerHTML = "Once you have made your purchase, simply snap your receipt and we will handle the rest!";
         document.getElementById("guide_header").innerHTML = "Scan your Receipt"
       }
+      function step6() {
+        highlight(6)
+        document.getElementById("screen").src = "guide_assets/20211216_224928000_iOS.png";
+        document.getElementById("guide_body").innerHTML = "Put your receipt on a plain surface. Please include as much of the receipt as possible. Date, price, and items are all important for verification. <b>Make sure that the photo is in-focus.</b>";
+        document.getElementById("guide_header").innerHTML = "Scan your Receipt"
+      }
+      
   </script>
